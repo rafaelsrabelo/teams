@@ -7,6 +7,9 @@ import { StatusBar } from 'react-native';
 import { NewGroup } from '@screens/NewGroup';
 import { Players } from '@screens/Players';
 
+import { AppRoutes } from './src/routes/app.routes';
+import { Routes } from './src/routes';
+
 export default function App() {
   const [fontsLoaded] = useFonts({
     Roboto_400Regular,
@@ -19,7 +22,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Players /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </ThemeProvider>
   );
 }
