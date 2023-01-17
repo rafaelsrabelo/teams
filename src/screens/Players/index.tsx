@@ -122,19 +122,7 @@ export function Players() {
           icon="add"
           onPress={handleAddPlayer}
         />
-                <Input
-          inputRef={newPlayerNameInputRef}
-          placeholder="Nome do atleta"
-          autoCorrect={false}
-          value={player}
-          onChangeText={setPlayer}
-          onSubmitEditing={handleAddPlayer}
-          returnKeyType="done"
-        />
-        <ButtonIcon
-          icon="add"
-          onPress={handleAddPlayer}
-        />
+        
       </Form>
       <HeaderList>
       <FlatList 
